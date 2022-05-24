@@ -1,0 +1,237 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: lightgrey;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0px;
+    left: 0px;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* Navigation Bar:Logo and Image */
+#logo{
+    margin: 10px 20px;
+}
+
+#logo img{
+    margin: 3px 5px;
+
+}
+
+/* Navigation Bar: list styling */
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    margin: 2px 5px;
+    padding: 5px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+/* Home Section */
+#home{
+    /* position: absolute; */
+    display: flex;
+    top: 0px;
+    flex-direction: column;
+    padding: 3px 190px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    background: url('../img/04.png') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    height: 450px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+
+}
+#home h1{
+    color: white;
+    text-align: center;
+    /* font-size: 2.8rem; */
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+/* Sevices Section */
+#services{
+    margin: 8px;
+    display: flex;
+    padding: 8px;
+}
+
+#services .box{
+    border: 2px solid rgb(0, 0, 0);
+    text-align: center;
+    margin: 17px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+.services-container{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+.services-container h1{
+    display: block;
+    margin: auto;
+    padding: 5px;
+    color: white;
+    /* background: url(../img/05.png); */
+    background: darkgrey;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.services-container::before{
+    content: "";
+    background-color: white;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+    /* display: block; */
+}
+
+/* Clients */
+
+.clients-container{
+    background-color: grey;
+}
+.clients-container h1{
+    color: black;
+}
+
+
+
+.clients{
+    display: flex;
+    justify-content: center;
+}
+.apps img{
+    margin: 20px;
+    height: 100px;
+    width: 100px;
+}
+
+/* Order */
+
+.order{
+    background-color: lightgrey;
+}
+
+.order h1{
+    color: black;
+    
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+    font-size: 2rem;
+}
+form{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+form .btn{
+    border: 1px solid black;
+}
+
+input{
+    margin: 5px;
+    padding: 5px;
+}
+label{
+    cursor: pointer;
+    margin: 5px;
+}
+footer{
+    border-top: 2px solid black;
+    font-size: 1.2rem;
+    background-color: rgb(238, 237, 237);
+    justify-content: center;
+    padding: 3px;
+}
+/* utility Classes */
+.h-primary{
+    
+    font-size: 3.8rem;
+    padding: 12px;
+    color: rgb(255, 255, 255);
+    
+}
+.h-secondary{
+    
+    font-size: 2.8rem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 10px;
+    font-size: 1.0rem;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.btn:hover{
+    border: 2px solid rgb(58, 152, 214);
+    background-color: rgb(129, 236, 255);
+    color: black;
+    font-style: italic;
+}
+.center{
+    text-align: center;
+}
+
